@@ -1,0 +1,75 @@
+@import "../../styles/variables";
+.paginationCss ul li button {
+  color: #2e8b57;
+}
+.comments {
+  position: relative;
+  &__wrapper {
+    display: flex;
+    padding: 0 72px;
+    justify-content: space-between;
+
+    @media (max-width: 1240px) {
+      flex-direction: column;
+      align-items: center;
+    }
+    @media (max-width: 800px) {
+      padding: 0 20px;
+    }
+  }
+  &__box {
+    & nav ul {
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+  }
+  &__block {
+    max-width: 600px;
+    min-height: 220px;
+    margin: 60px 0;
+    @media (max-width: 1240px) {
+      margin: 60px 0 0 0;
+    }
+  }
+  &__info {
+    & h2 {
+      @media (max-width: 800px) {
+        font-size: 42px;
+        line-height: 42px;
+      }
+    }
+  }
+  &__comment_box {
+    max-width: 630px;
+  }
+  &__link {
+    position: relative;
+    z-index: 2;
+    // margin-bottom: 50px;
+    &_effect_3 {
+      & a {
+        color: $c-white;
+        padding: 10px 0;
+        position: relative;
+        transition: $t-normal;
+        &::after {
+          height: 2px;
+          width: 100%;
+          background: $c-dark-grey;
+          content: "";
+          position: absolute;
+          left: 0px;
+          bottom: 0;
+          transform: scaleX(0);
+          transition: 0.3s;
+          z-index: 2;
+        }
+        &:hover {
+          &::after {
+            transform: scaleX(1);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.skill {
+  min-height: 230px;
+  max-width: 415px;
+}
+
+.skill__label {
+  font-size: 117px;
+  opacity: 0.5;
+}
+
+@media (max-width: 580px) {
+  .skill__label {
+    font-size: 86px;
+  }
+}
+
+.skill__profession {
+  margin-bottom: 15px;
+}
+
+.skill__company {
+  color: #3cc74e;
+}

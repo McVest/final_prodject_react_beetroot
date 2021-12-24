@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "Sen";
+  src: url("../assets/fonts/Sen/Sen-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sen";
+  src: url("../assets/fonts/Sen/Sen-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+  padding: 0;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Sen", sans-serif;
+  width: 100%;
+  max-width: 1920px;
+}
+
+h1 {
+  font-family: "Sen", sans-serif;
+  font-size: 76px;
+  line-height: 90px;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Sen", sans-serif;
+  font-size: 55px;
+  line-height: 66px;
+  margin: 0;
+}
+
+h3 {
+  font-family: "Sen", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+}
+
+h4 {
+  font-family: "Sen", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+}
+
+h5 {
+  font-family: "Sen", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}

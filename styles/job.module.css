@@ -1,0 +1,23 @@
+.job {
+  min-height: 230px;
+  max-width: 415px;
+}
+
+.job__label {
+  font-size: 117px;
+  opacity: 0.5;
+}
+
+@media (max-width: 580px) {
+  .job__label {
+    font-size: 86px;
+  }
+}
+
+.job__profession {
+  margin-bottom: 15px;
+}
+
+.job__company {
+  color: #3cc74e;
+}

@@ -1,0 +1,88 @@
+.bunner {
+  height: 900px;
+  position: relative;
+}
+
+.bunner::before {
+  background-color: #181823;
+  position: absolute;
+  height: 900px;
+  content: "";
+  z-index: 1;
+  width: 60%;
+  right: 0;
+  top: 0;
+}
+
+.bunner::after {
+  content: "";
+  background: url(../../assets/image/myPhoto.png) no-repeat center center;
+  top: calc(50% - 325px);
+  position: absolute;
+  max-width: 750px;
+  height: 650px;
+  width: 100%;
+  z-index: 1;
+}
+
+@media (max-width: 1165px) {
+  .bunner::after {
+    -webkit-filter: brightness(60%);
+            filter: brightness(60%);
+  }
+}
+
+.bunner_wrapper {
+  height: 900px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 2;
+}
+
+.bunner_title {
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 835px) {
+  .bunner_title {
+    font-size: 55px;
+    line-height: 66px;
+  }
+}
+
+@media (max-width: 580px) {
+  .bunner_title {
+    font-size: 42px;
+    line-height: 42px;
+  }
+}
+
+.bunner_title_grey {
+  opacity: 0.5;
+}
+
+.bunner_text {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.bunner_about {
+  margin-right: 40px;
+  min-height: 360px;
+  max-width: 770px;
+  z-index: 2;
+}
+
+@media (max-width: 835px) {
+  .bunner_about {
+    margin: 0 20px;
+  }
+}

@@ -1,0 +1,26 @@
+@import "../../styles/variables";
+
+.header {
+  display: flex;
+  background-color: #222831;
+  justify-content: space-around;
+  padding: 1rem;
+  align-items: center;
+  @media (max-width: 768px) {
+    height: 48px;
+    justify-content: space-between;
+    padding: 0 28px;
+  }
+  &__toggle {
+    display: none;
+    @media (max-width: 768px) {
+      display: inline;
+      z-index: 1002;
+      color: $c-white;
+      font-size: 24px;
+    }
+  }
+  &__show {
+    right: 0;
+  }
+}

@@ -1,0 +1,135 @@
+.skillset {
+  margin: 120px 0;
+}
+
+.skillset__wrapper {
+  min-height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 72px;
+}
+
+@media (max-width: 1000px) {
+  .skillset__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 20px;
+  }
+}
+
+.skillset__block {
+  width: 50%;
+}
+
+@media (max-width: 1000px) {
+  .skillset__block {
+    width: 100%;
+  }
+}
+
+.skillset__block h2 {
+  font-size: 72px;
+}
+
+@media (max-width: 580px) {
+  .skillset__block h2 {
+    font-size: 42px;
+    line-height: 42px;
+  }
+}
+
+.skillset__block p {
+  margin: 15px 0;
+}
+
+.skillset__link {
+  color: #3cc74e;
+}
+
+.skills {
+  width: 100%;
+  padding: 0 20px;
+}
+
+@media (max-width: 1000px) {
+  .skills {
+    padding: 0;
+  }
+}
+
+.skill_name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #f1f1f1;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.skill_bar {
+  height: 14px;
+  background: #282828;
+  border-radius: 3px;
+}
+
+.skill_per {
+  height: 14px;
+  background: #d13639;
+  border-radius: 3px;
+  position: relative;
+  -webkit-animation: fillBars 2.5s 1;
+          animation: fillBars 2.5s 1;
+}
+
+.skill_per::before {
+  content: attr(per);
+  position: absolute;
+  padding: 4px 6px;
+  background: #f1f1f1;
+  border-radius: 4px;
+  font-size: 12px;
+  top: -35px;
+  right: 0;
+  color: black;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+.skill_per::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #f1f1f1;
+  top: -20px;
+  right: 0;
+  -webkit-transform: translateX(50%) rotate(45deg);
+          transform: translateX(50%) rotate(45deg);
+  border-radius: 2px;
+}
+
+@-webkit-keyframes fillBars {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes fillBars {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

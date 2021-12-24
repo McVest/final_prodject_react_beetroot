@@ -1,0 +1,96 @@
+.comment {
+  position: relative;
+}
+
+.comment__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.comment__item {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 630px;
+  padding: 64px;
+  margin: 60px 0;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 3px solid #181823;
+  -webkit-box-shadow: 0px 0px 20px 15px rgba(24, 24, 35, 0.6), inset 0px 0px 20px 15px rgba(24, 24, 35, 0.6);
+          box-shadow: 0px 0px 20px 15px rgba(24, 24, 35, 0.6), inset 0px 0px 20px 15px rgba(24, 24, 35, 0.6);
+}
+
+@media (max-width: 800px) {
+  .comment__item {
+    padding: 20px;
+    margin: 30px 0px;
+  }
+}
+
+.comment__item h3 {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+  .comment__item h3 {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .comment__item h3 {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+.comment__item h3::before {
+  content: '"';
+}
+
+.comment__item h3::after {
+  content: '"';
+}
+
+.comment__item h4 {
+  color: #8491A0;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 600px) {
+  .comment__item h4 {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+.comment__item h5 {
+  color: #8491A0;
+}
+
+@media (max-width: 340px) {
+  .comment__item h5 {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+@media (max-width: 320px) {
+  .comment__item h5 {
+    font-size: 12px;
+    line-height: 12px;
+  }
+}

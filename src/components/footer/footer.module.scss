@@ -1,0 +1,58 @@
+@import "../../styles/variables";
+.footer {
+  position: relative;
+  background-color: $c-level-one;
+  // min-height: 422px;
+
+  &__wraper {
+    padding: 0 72px;
+    @media (max-width: 650px) {
+      padding: 0 20px;
+    }
+  }
+  &__box {
+    max-width: 1440px;
+    padding-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media (max-width: 300px) {
+      justify-content: center;
+    }
+  }
+  &__logo {
+    margin-bottom: 32px;
+    & svg {
+      width: 135px;
+      height: 40px;
+    }
+  }
+  &__menu {
+    display: flex;
+    width: 287px;
+    height: 195px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    @media (max-width: 300px) {
+      height: 255px;
+      align-items: center;
+    }
+  }
+  &__socials {
+    // width: 105px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+  &__info p {
+    color: $c-dark-grey;
+    margin: 0;
+    padding-bottom: 20px;
+  }
+}
+.menu__link {
+  transition: $t-normal;
+  &:hover {
+    background-color: $c-primary;
+  }
+}

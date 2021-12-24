@@ -1,0 +1,8 @@
+.menu__link {
+  -webkit-transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu__link:hover {
+  background-color: #5221e6;
+}

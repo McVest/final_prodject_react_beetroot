@@ -1,0 +1,114 @@
+.mid {
+  background: #fbe4ff;
+}
+
+.mid__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 1440px) {
+  .mid__wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.mid__block {
+  max-width: 720px;
+  width: 100%;
+}
+
+.mid__block_text {
+  margin-top: 120px;
+  max-height: 360px;
+  padding-left: 72px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 1440px) {
+  .mid__block_text {
+    padding-left: 0;
+    padding: 0 20px;
+    min-height: 360px;
+    max-height: none;
+  }
+}
+
+.mid__block_img {
+  max-width: 720px;
+  min-height: 600px;
+  background-repeat: no-repeat !important;
+  background-position: right !important;
+}
+
+.mid__info {
+  min-height: 200px;
+  max-width: 576px;
+}
+
+.mid__info h2 {
+  color: #000000;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 580px) {
+  .mid__info h2 {
+    font-size: 42px;
+    line-height: 42px;
+  }
+}
+
+.mid__info p {
+  color: #5B6876;
+  line-height: 150%;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.mid__link {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 50px;
+}
+
+.mid__link_effect_3 a {
+  color: #000000;
+  padding: 10px 0;
+  position: relative;
+  -webkit-transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mid__link_effect_3 a::after {
+  height: 2px;
+  width: 100%;
+  background: #5B6876;
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 2;
+}
+
+.mid__link_effect_3 a:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}

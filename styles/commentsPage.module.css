@@ -1,0 +1,22 @@
+.comments_page {
+  padding: 120px 72px 0 72px;
+}
+
+@media (max-width: 1240px) {
+  .comments_page {
+    padding: 120px 20px 0 20px;
+  }
+}
+
+.paginationCss {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.paginationCss ul li button {
+  color: #5221e6;
+}

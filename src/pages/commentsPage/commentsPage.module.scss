@@ -1,0 +1,16 @@
+@import "../../styles/variables";
+.comments_page{
+    
+    padding: 120px 72px 0 72px;
+    @media (max-width: 1240px) {
+        padding: 120px 20px 0 20px;
+      }
+}
+.paginationCss {
+  display: flex;
+  justify-content: center;
+  
+  & ul li button {
+    color: $c-primary;
+  }
+}

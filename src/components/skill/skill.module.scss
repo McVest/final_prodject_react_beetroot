@@ -1,0 +1,19 @@
+@import "../../styles/variables";
+
+.skill {
+  min-height: 230px;
+  max-width: 415px;
+  &__label {
+    font-size: $fs-label-one;
+    opacity: 0.5;
+    @media (max-width: 580px) {
+      font-size: 86px;
+    }
+  }
+  &__profession {
+    margin-bottom: 15px;
+  }
+  &__company {
+    color: $c-green;
+  }
+}

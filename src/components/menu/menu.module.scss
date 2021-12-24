@@ -1,0 +1,43 @@
+@import "../../styles/variables";
+
+.nav {
+  @media (max-width: 768px) {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: #222831;
+    color: $c-white;
+    width: 60%;
+    height: 100vh;
+    padding: 24px 0;
+    z-index: 1001;
+    transition: $t-normal;
+    border-radius: 0 0 0 50%;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &__item {
+    margin: 0 8px;
+    @media (max-width: 768px) {
+     margin: 2rem 0; 
+    }
+  }
+  &__link {
+    padding: 10px;
+    color: $c-white;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    &:hover {
+      background-color: $c-primary;
+    }
+  }
+  &__show{
+    right: 0;
+  }
+}

@@ -1,0 +1,38 @@
+.header {
+  position: fixed;
+  width: 100%;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 999;
+}
+
+.header__wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header__block {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 85px;
+  padding: 0 72px;
+}
+
+.header__block svg {
+  height: 24px;
+  width: 85px;
+}
+
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}

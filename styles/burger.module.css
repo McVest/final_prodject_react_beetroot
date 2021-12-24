@@ -1,0 +1,45 @@
+.burger {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  cursor: pointer;
+  display: none;
+}
+
+.burgerLine {
+  background-color: #ffffff;
+  -webkit-transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 7px;
+  width: 22px;
+  height: 1px;
+}
+
+.burgerLine:last-child {
+  margin-bottom: 0;
+}
+
+.burgerFirstLineOpen {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin-bottom: -4px;
+}
+
+.burgerLastLineOpen {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  margin-top: -5px;
+}
+
+.burgerLineSmall {
+  width: 17px;
+}
+
+.burgerLineHide {
+  opacity: 0;
+  width: 0;
+}
